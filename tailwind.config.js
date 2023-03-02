@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{html,ts}"],
   theme: {
     fontFamily: {
       'sans': ['"Exo 2"', '"Open Sans"', 'sans-serif']
@@ -58,10 +58,18 @@ module.exports = {
       },
       width: {
         fullPage: "calc(100vw)",
-        sideMenu: "100px"
+        sideMenu: "85px",
+        logoIcon: "60px",
+        sideMenuIcon: "25px",
+        header: "calc(100vw - 85px)",
+
       },
       height: {
         fullPage: "calc(100vh)",
+        logoIcon: "60px",
+        sideMenuIcon: "25px",
+        header: "70px"
+
       },
     },
   },

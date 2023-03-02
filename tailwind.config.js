@@ -3,7 +3,7 @@ module.exports = {
   content: [],
   theme: {
     fontFamily: {
-      'sans': ['Exo-2', 'Open-Sans', 'sans-serif']
+      'sans': ['"Exo 2"', '"Open Sans"', 'sans-serif']
     },
     extend: {
       colors: {

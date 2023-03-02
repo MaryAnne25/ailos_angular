@@ -56,6 +56,13 @@ module.exports = {
         subtitleBody: '11px',
         label: '14px'
       },
+      width: {
+        fullPage: "calc(100vw)",
+        sideMenu: "100px"
+      },
+      height: {
+        fullPage: "calc(100vh)",
+      },
     },
   },
   plugins: [],

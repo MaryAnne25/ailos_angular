@@ -3,7 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     fontFamily: {
-      'sans': ['"Exo 2"', '"Open Sans"', 'sans-serif']
+      'header': ['"Exo 2"', 'sans-serif'],
+      'default': ['"Open Sans"', 'sans-serif']
     },
     extend: {
       colors: {
@@ -62,15 +63,22 @@ module.exports = {
         logoIcon: "60px",
         sideMenuIcon: "25px",
         header: "calc(100vw - 85px)",
+        sideMenuExpanded: "300px",
+        sideMenuCollapsed: "85px",
+        sideMenuLabelExpanded: "200px",
+        contentWithMenuCollapsed: "calc(100vw - 85px)",
+        contentWithMenuExpanded: "calc(100vw - 300px)"
 
       },
       height: {
         fullPage: "calc(100vh)",
         logoIcon: "60px",
         sideMenuIcon: "25px",
-        header: "70px"
-
+        header: "70px",
       },
+      lineHeight: {
+        sideMenuIcon: '25px'
+      }
     },
   },
   plugins: [],

@@ -1,0 +1,16 @@
+<div class="flex flex-row ml-7 mt-9 h-9">
+  <div [class]="block" class="h-sideMenuIcon w-sideMenuIcon mr-5 self-stretch">
+    <img *ngIf="iconType == 'png'"
+         alt="{{ icon }}"
+         src="{{ 'assets' + '/' + 'images' + '/' + icon + '.png' }}"
+         class="h-sideMenuIcon w-sideMenuIcon"
+    />
+    <mat-icon *ngIf="iconType == 'svg'" svgIcon="{{ icon }}"></mat-icon>
+  </div>
+  <span
+    class="font-default font-bold text-sectionTitle whitespace-nowrap text-white"
+    *ngIf="isExpanded"
+    [@showHideLabel]="isExpanded ? expanded : collapsed">
+    {{ label | translate }}
+  </span>
+</div>

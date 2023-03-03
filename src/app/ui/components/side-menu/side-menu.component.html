@@ -1,39 +1,46 @@
-<div class="flex flex-col h-fullPage w-sideMenu bg-primary">
+<div class="flex flex-col h-fullPage w-sideMenu bg-primary"
+     [@slideNavigation]="{ value: isExpanded ? expanded : collapsed, params: { width_expanded: menuSizes.sideMenuExpanded, width_collapsed: menuSizes.sideMenuCollapsed }}">
   <div class="h-logoIcon w-logoIcon mt-5 ml-3">
     <img
       alt="sidemenu logo"
       src="assets/images/sidemenu-logo.png"
     />
   </div>
-  <div class="h-sideMenuIcon w-sideMenuIcon mx-auto mt-9 text-aiBlue-300">
-    <mat-icon svgIcon="sandwich-menu"></mat-icon>
-  </div>
-  <div class="h-sideMenuIcon w-sideMenuIcon mx-auto mt-9 text-white">
-    <mat-icon svgIcon="search"></mat-icon>
-  </div>
-  <div class="h-sideMenuIcon w-sideMenuIcon mx-auto mt-9">
-    <img
-      alt="sidemenu star"
-      src="assets/images/sidemenu-star.png"
-    />
-  </div>
-  <div class="h-sideMenuIcon w-sideMenuIcon mx-auto mt-9">
-    <img
-      alt="sidemenu message"
-      src="assets/images/sidemenu-message.png"
-    />
-  </div>
-  <div class="h-sideMenuIcon w-sideMenuIcon mx-auto mt-9">
-    <img
-      alt="sidemenu levels"
-      src="assets/images/sidemenu-levels.png"
-    />
-  </div>
-  <div class="h-sideMenuIcon w-sideMenuIcon mx-auto mt-9">
-    <img
-      alt="sidemenu bank"
-      src="assets/images/sidemenu-bank.png"
-    />
-  </div>
+  <button class="text-aiBlue-300 mt-9 flex" (click)="toggleCollapse()">
+    <mat-icon class="ml-7" svgIcon="sandwich-menu"></mat-icon>
+  </button>
+  <ai-side-menu-item
+    [block]="'text-white'"
+    [iconType]="'svg'"
+    [icon]="'search'">
+  </ai-side-menu-item>
+  <ai-side-menu-item
+    [block]="'text-white'"
+    [iconType]="'png'"
+    [icon]="'sidemenu-star'"
+    [label]="'SIDE-MENU.FAVORITES' | translate"
+    [isExpanded]="isExpanded">
+  </ai-side-menu-item>
+  <ai-side-menu-item
+    [block]="'text-white'"
+    [iconType]="'png'"
+    [icon]="'sidemenu-message'"
+    [label]="'SIDE-MENU.CONTACT' | translate"
+    [isExpanded]="isExpanded">
+  </ai-side-menu-item>
+  <ai-side-menu-item
+    [block]="'text-white'"
+    [iconType]="'png'"
+    [icon]="'sidemenu-levels'"
+    [label]="'SIDE-MENU.SIGN-UP' | translate"
+    [isExpanded]="isExpanded">
+  </ai-side-menu-item>
+  <ai-side-menu-item
+    [block]="'text-white'"
+    [iconType]="'png'"
+    [icon]="'sidemenu-bank'"
+    [label]="'SIDE-MENU.FURTHER-OPTIONS' | translate"
+    [isExpanded]="isExpanded">
+  </ai-side-menu-item>
 
 </div>

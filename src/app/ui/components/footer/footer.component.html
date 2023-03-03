@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="flex flex-row h-footer bg-white">
+  <ai-button
+    *ngIf="validCPF"
+    class="mt-3 mx-3"
+    type="primary"
+    [block]="'h-footerButton'"
+    text="{{ 'FOOTER.INITIATE-ADMISSION-BUTTON' | translate }}">
+  </ai-button>
+  <ai-button
+    class="mt-3 mx-3"
+    type="secondary"
+    [block]="'h-footerButton'"
+    text="{{ 'FOOTER.ACCOUNT-OPENING-TIPS-BUTTON' | translate }}">
+  </ai-button>
+</div>

@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { slideNavigation } from '../../../../assets/animations';
-import { Observable } from 'rxjs';
+import { Component, OnInit } from '@angular/core'
+import { slideNavigation } from '../../../../assets/animations'
+import { Observable } from 'rxjs'
 // @ts-ignore
-import * as tailwindConfig from 'tailwind.config';
-import { SideMenu } from '../../../domain/model/side-menu.model';
+import * as tailwindConfig from 'tailwind.config'
+import { SideMenu } from '../../../domain/model/side-menu.model'
 
 @Component({
   selector: 'ai-content',
@@ -18,10 +18,10 @@ export class ContentPageComponent implements OnInit {
   isCpfValid: boolean
 
   ngOnInit(): void {
-    this.isSideMenuExpanded.subscribe((sideMenuExpanded) => this.sideMenuExpanded = sideMenuExpanded);
+    this.isSideMenuExpanded.subscribe((sideMenuExpanded) => this.sideMenuExpanded = sideMenuExpanded)
   }
 
   verifyCpfValidity(value: boolean): void {
-    this.isCpfValid = value;
+    this.isCpfValid = value
   }
 }

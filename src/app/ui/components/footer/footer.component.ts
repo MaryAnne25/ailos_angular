@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'ai-footer',
@@ -6,5 +6,5 @@ import {Component, Input} from '@angular/core';
 })
 
 export class FooterComponent {
-  @Input() validCPF = false;
+  @Input() validCPF = false
 }

@@ -1,6 +1,6 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations'
 // @ts-ignore
-import * as tailwindConfig from 'tailwind.config';
+import * as tailwindConfig from 'tailwind.config'
 
 export const slideNavigation = trigger('slideNavigation', [
   state('collapsed', style({width: "{{ width_collapsed }}" }),

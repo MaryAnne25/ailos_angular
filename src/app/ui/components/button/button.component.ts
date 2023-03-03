@@ -18,6 +18,7 @@ export class ButtonComponent implements OnInit {
   }
 
   clicked(event: Event): void {
+    event.stopPropagation()
     this.click.emit(event)
   }
 }

@@ -12,6 +12,7 @@ import { CpfVerificationComponent } from './cpf-field/cpf-verification.component
 import { FormsModule } from '@angular/forms';
 import { DirectivesModule } from '../directives/directives.module';
 import {CardComponent} from "./card/card.component";
+import {RegistrationStepsComponent} from "./registration-steps/registration-steps.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {CardComponent} from "./card/card.component";
     ButtonComponent,
     FooterComponent,
     CpfVerificationComponent,
-    CardComponent
+    CardComponent,
+    RegistrationStepsComponent
   ],
   exports: [
     SideMenuComponent,
@@ -32,7 +34,8 @@ import {CardComponent} from "./card/card.component";
     ButtonComponent,
     FooterComponent,
     CpfVerificationComponent,
-    CardComponent
+    CardComponent,
+    RegistrationStepsComponent
   ],
   imports: [
     MatIconModule,

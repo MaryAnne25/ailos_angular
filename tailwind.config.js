@@ -68,8 +68,8 @@ module.exports = {
         sideMenuLabelExpanded: "200px",
         contentWithMenuCollapsed: "calc(100vw - 85px)",
         contentWithMenuExpanded: "calc(100vw - 300px)",
-        card: "280px"
-
+        card: "280px",
+        registrationStepsConnectingLine: "180px"
       },
       height: {
         fullPage: "calc(100vh)",
@@ -83,7 +83,8 @@ module.exports = {
         button: "32px",
         cpfField: "32px",
         content: "calc(100vh - 70px - 70px)",
-        card: "250px"
+        card: "250px",
+        registrationStepsConnectingLine: "13px"
       },
       lineHeight: {
         sideMenuIcon: '25px'

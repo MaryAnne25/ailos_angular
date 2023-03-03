@@ -34,5 +34,11 @@
     "CPF-SITUATION": "Situação do CPF",
     "REGULAR-SITUATION": "Regular",
     "IRREGULAR-SITUATION": "Irregular"
+  },
+  "REGISTRATION-STEPS": {
+    "START": "Início",
+    "DOCUMENTS": "Documentos",
+    "REGISTRATION-DATA": "Dados Cadastrais",
+    "ADMISSION": "Admissão"
   }
 }

@@ -2,9 +2,18 @@
      [@slideNavigation]="{ value: sideMenuExpanded ? sideMenu.Expanded : sideMenu.Collapsed,
                            params: { width_expanded: contentPageSizes.contentWithMenuExpanded, width_collapsed: contentPageSizes.contentWithMenuCollapsed }}">
   <ai-header></ai-header>
-  <div class="h-content">
-    <ai-cpf-verification></ai-cpf-verification>
-  </div>
-  <ai-footer></ai-footer>
+  <div class="h-content px-5">
+    <div class="flex flex-col my-3">
+      <span class="font-default text-headerSubtitle mb-2">{{ 'CPF-VERIFICATION.TITLE' | translate }}</span>
+      <span class="font-default text-defaultBody">{{ 'CPF-VERIFICATION.SUBTITLE-1' | translate }}</span>
+      <span class="font-default text-defaultBody">{{ 'CPF-VERIFICATION.SUBTITLE-2' | translate }}</span>
+    </div>
+    <ai-cpf-verification
+      (cpfValidity)="verifyCpfValidity($event)">
+    </ai-cpf-verification>
+    <div>
 
+    </div>
+  </div>
+  <ai-footer [validCPF]="isCpfValid"></ai-footer>
 </div>

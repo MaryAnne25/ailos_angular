@@ -15,8 +15,13 @@ export class ContentPageComponent implements OnInit {
   isSideMenuExpanded: Observable<boolean>
   contentPageSizes = tailwindConfig.theme?.extend?.width
   sideMenu = SideMenu
+  isCpfValid: boolean
 
   ngOnInit(): void {
     this.isSideMenuExpanded.subscribe((sideMenuExpanded) => this.sideMenuExpanded = sideMenuExpanded);
+  }
+
+  verifyCpfValidity(value: boolean): void {
+    this.isCpfValid = value;
   }
 }

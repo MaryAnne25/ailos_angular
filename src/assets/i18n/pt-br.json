@@ -16,6 +16,9 @@
     "ACCOUNT-OPENING-TIPS-BUTTON": "Dicas para abertura da conta"
   },
   "CPF-VERIFICATION": {
+    "TITLE": "Informe o CPF do futuro cooperado (a)",
+    "SUBTITLE-1": "Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.",
+    "SUBTITLE-2": "Digite apenas os números (sem pontos ou traços)",
     "LABEL": "CPF",
     "BUTTON": "Consultar por CPF"
   }

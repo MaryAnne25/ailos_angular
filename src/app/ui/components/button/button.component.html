@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<button (click)="clicked($event)"
+        class="flex items-center h-footerButton"
+        [class]="block"
+        [class.border]="isSecondary"
+        [class.border-primary]="isSecondary"
+        [class.px-6]="isPrimary || isSecondary"
+        [class.bg-primary]="isPrimary"
+        [class.bg-white]="isSecondary">
+  <div *ngIf="text" class="flex">
+    <span class="text-small text-center"
+          [class.text-white]="isPrimary"
+          [class.font-bold]="isPrimary || isSecondary"
+          [class.text-primary]="isSecondary">
+      {{ text | translate }}
+    </span>
+  </div>
+</button>

@@ -67,7 +67,8 @@ module.exports = {
         sideMenuCollapsed: "85px",
         sideMenuLabelExpanded: "200px",
         contentWithMenuCollapsed: "calc(100vw - 85px)",
-        contentWithMenuExpanded: "calc(100vw - 300px)"
+        contentWithMenuExpanded: "calc(100vw - 300px)",
+        card: "280px"
 
       },
       height: {
@@ -81,7 +82,8 @@ module.exports = {
         footerButton: "48px",
         button: "32px",
         cpfField: "32px",
-        content: "calc(100vh - 70px - 70px)"
+        content: "calc(100vh - 70px - 70px)",
+        card: "250px"
       },
       lineHeight: {
         sideMenuIcon: '25px'

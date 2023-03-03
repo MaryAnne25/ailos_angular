@@ -2,17 +2,36 @@
      [@slideNavigation]="{ value: sideMenuExpanded ? sideMenu.Expanded : sideMenu.Collapsed,
                            params: { width_expanded: contentPageSizes.contentWithMenuExpanded, width_collapsed: contentPageSizes.contentWithMenuCollapsed }}">
   <ai-header></ai-header>
-  <div class="h-content px-5">
+  <div class="h-content flex flex-col px-5">
     <div class="flex flex-col my-3">
       <span class="font-default text-headerSubtitle mb-2">{{ 'CPF-VERIFICATION.TITLE' | translate }}</span>
       <span class="font-default text-defaultBody">{{ 'CPF-VERIFICATION.SUBTITLE-1' | translate }}</span>
       <span class="font-default text-defaultBody">{{ 'CPF-VERIFICATION.SUBTITLE-2' | translate }}</span>
     </div>
     <ai-cpf-verification
+      class="flex"
       (cpfValidity)="verifyCpfValidity($event)">
     </ai-cpf-verification>
-    <div>
-
+    <div class="flex flex-row mt-6" *ngIf="isCpfValid">
+      <ai-card
+        [type]="'person'"
+        [title]="'CARD.PERSON-TITLE'"
+        [subtitle]="'CARD.PERSON-SUBTITLE'"
+        [personName]="'Mariane Lamas Malheiros'"
+        [cpfSituation]="'regular'">
+      </ai-card>
+      <ai-card
+        [type]="'account'"
+        [title]="'CARD.CHECKING-ACCOUNT-TITLE'"
+        [subtitle]="'CARD.ACCOUNT-SUBTITLE'"
+        [accountNumber]="'557932-4'">
+      </ai-card>
+      <ai-card
+        [type]="'account'"
+        [title]="'CARD.INVESTING-ACCOUNT-TITLE'"
+        [subtitle]="'CARD.ACCOUNT-SUBTITLE'"
+        [accountNumber]="'778461-8'">
+      </ai-card>
     </div>
   </div>
   <ai-footer [validCPF]="isCpfValid"></ai-footer>

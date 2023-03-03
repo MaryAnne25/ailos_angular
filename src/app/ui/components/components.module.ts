@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CpfVerificationComponent } from './cpf-field/cpf-verification.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesModule } from '../directives/directives.module';
+import {CardComponent} from "./card/card.component";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DirectivesModule } from '../directives/directives.module';
     ContentPageComponent,
     ButtonComponent,
     FooterComponent,
-    CpfVerificationComponent
+    CpfVerificationComponent,
+    CardComponent
   ],
   exports: [
     SideMenuComponent,
@@ -29,7 +31,8 @@ import { DirectivesModule } from '../directives/directives.module';
     ContentPageComponent,
     ButtonComponent,
     FooterComponent,
-    CpfVerificationComponent
+    CpfVerificationComponent,
+    CardComponent
   ],
   imports: [
     MatIconModule,

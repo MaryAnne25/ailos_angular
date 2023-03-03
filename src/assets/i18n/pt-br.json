@@ -21,5 +21,18 @@
     "SUBTITLE-2": "Digite apenas os números (sem pontos ou traços)",
     "LABEL": "CPF",
     "BUTTON": "Consultar por CPF"
+  },
+  "CARD": {
+    "PERSON-TITLE": "Situação cadastral do CPF",
+    "CHECKING-ACCOUNT-TITLE": "Conta corrente",
+    "INVESTING-ACCOUNT-TITLE": "Conta aplicação",
+    "PERSON-SUBTITLE": "Consulta na Receita Federal",
+    "ACCOUNT-SUBTITLE": "Cooperativa Viacredi",
+    "ACCOUNT-NUMBER": "Número da conta",
+    "DUPLICATE-ACCOUNT": "Duplicar conta",
+    "NAME": "Nome",
+    "CPF-SITUATION": "Situação do CPF",
+    "REGULAR-SITUATION": "Regular",
+    "IRREGULAR-SITUATION": "Irregular"
   }
 }

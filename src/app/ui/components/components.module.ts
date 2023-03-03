@@ -5,25 +5,38 @@ import { HeaderComponent } from './header/header.component';
 import { SideMenuItemComponent } from './side-menu-item/side-menu-item.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import {ContentPageComponent} from "./content-page/content-page.component";
+import { ContentPageComponent } from './content-page/content-page.component';
+import { ButtonComponent } from './button/button.component';
+import { FooterComponent } from './footer/footer.component';
+import { CpfVerificationComponent } from './cpf-field/cpf-verification.component';
+import { FormsModule } from '@angular/forms';
+import { DirectivesModule } from '../directives/directives.module';
 
 @NgModule({
   declarations: [
     SideMenuComponent,
     HeaderComponent,
     SideMenuItemComponent,
-    ContentPageComponent
+    ContentPageComponent,
+    ButtonComponent,
+    FooterComponent,
+    CpfVerificationComponent
   ],
   exports: [
     SideMenuComponent,
     HeaderComponent,
     SideMenuItemComponent,
-    ContentPageComponent
+    ContentPageComponent,
+    ButtonComponent,
+    FooterComponent,
+    CpfVerificationComponent
   ],
   imports: [
     MatIconModule,
     TranslateModule,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    DirectivesModule
   ]
 })
 export class ComponentsModule {

@@ -1,0 +1,20 @@
+<div class="flex flex-row">
+  <div class="flex flex-col mr-3">
+    <span class="mb-1 font-default font-semibold text-defaultBody">{{ 'CPF-VERIFICATION.LABEL' | translate }}</span>
+    <input type="text"
+           name="cpf"
+           placeholder="000.000.000-00"
+           [(ngModel)]="cpf"
+           (aiClickOutside)="formatCpf()"
+           class="flex flex-row border border-aiGrey-700 px-6 h-cpfField">
+  </div>
+  <ai-button
+    text="{{ 'CPF-VERIFICATION.BUTTON' | translate }}"
+    type="primary"
+    [block]="'h-button'"
+    class="self-end"
+    (click)="isValidCPF()">
+  </ai-button>
+</div>
+
+

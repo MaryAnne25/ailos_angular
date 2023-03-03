@@ -10,5 +10,13 @@
     "TITLE": "Nova admissão cooperado",
     "SUBTITLE": "Cadastro / Admissão do Cooperado / Nova Admissão de Cooperado",
     "BUTTON": "Viacredi"
+  },
+  "FOOTER": {
+    "INITIATE-ADMISSION-BUTTON": "Iniciar nova admissão",
+    "ACCOUNT-OPENING-TIPS-BUTTON": "Dicas para abertura da conta"
+  },
+  "CPF-VERIFICATION": {
+    "LABEL": "CPF",
+    "BUTTON": "Consultar por CPF"
   }
 }

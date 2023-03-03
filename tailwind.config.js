@@ -62,6 +62,7 @@ module.exports = {
         sideMenu: "85px",
         logoIcon: "60px",
         sideMenuIcon: "25px",
+        headerIcon: "32px",
         header: "calc(100vw - 85px)",
         sideMenuExpanded: "300px",
         sideMenuCollapsed: "85px",
@@ -75,6 +76,8 @@ module.exports = {
         logoIcon: "60px",
         sideMenuIcon: "25px",
         header: "70px",
+        headerIcon: "32px",
+        headerButton: "32px"
       },
       lineHeight: {
         sideMenuIcon: '25px'

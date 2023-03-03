@@ -1,3 +1,21 @@
-<div class="flex flex-row h-header w-header bg-white">
+<div class="flex flex-row h-header w-header bg-white justify-between">
+  <div class="flex flex-col ml-4 mt-2.5">
+    <span class="font-header text-headerSubtitle font-bold text-aiGrey-900">{{ 'HEADER.TITLE' | translate | uppercase }}</span>
+    <span class="font-default text-subtitleBody font-normal text-aiGrey-700">{{ 'HEADER.SUBTITLE' | translate }}</span>
+  </div>
+  <div></div>
+  <div class="flex flex-row mt-5 mr-4">
+    <mat-icon class="scale-125 mt-1 mr-2 text-primary" svgIcon="notification-bell"></mat-icon>
+    <button class="rounded-full border-2 border-primary h-headerButton mx-2">
+      <span class="px-2 font-header font-bold text-primary text-cardTitle">{{ 'HEADER.BUTTON' | translate | uppercase }}</span>
+    </button>
 
+    <div class="ml-2">
+      <img alt="profile picture"
+           src="assets/images/user-picture.png"
+           class="h-headerIcon w-headerIcon border-2 border-primary rounded-full"
+      />
+      <mat-icon class="absolute scale-50 text-primary top-9 right-2" svgIcon="settings"></mat-icon>
+    </div>
+  </div>
 </div>

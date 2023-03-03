@@ -14,8 +14,8 @@ export class HeaderComponent {
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/images/notification-bell.svg")
     );
     this.matIconRegistry.addSvgIcon(
-      "account-circle",
-      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/images/account-circle.svg")
+      "settings",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/images/settings.svg")
     );
   }
 }

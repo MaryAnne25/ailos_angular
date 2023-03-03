@@ -5,5 +5,10 @@
     "CONTACT": "Atendimento",
     "SIGN-UP": "Cadastro",
     "FURTHER-OPTIONS": "Demais telas / rotinas"
+  },
+  "HEADER": {
+    "TITLE": "Nova admissão cooperado",
+    "SUBTITLE": "Cadastro / Admissão do Cooperado / Nova Admissão de Cooperado",
+    "BUTTON": "Viacredi"
   }
 }
